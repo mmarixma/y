@@ -1,1 +1,1 @@
-ls -m
+ls -mturp | sed 's/, /,/g'
