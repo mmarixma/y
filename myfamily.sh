@@ -1,0 +1,2 @@
+curl -s https://learn.zone01kisumu.ke/assets/superhero/all.json |
+jq --args HERO "$HERO_ID" '.[] | select(.id == ($HERO | tonumber)) | .connections.relatives' | sed 's/ //g' 
