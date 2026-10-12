@@ -1,1 +1,1 @@
-ls -mtrp | sed 's/, /,/g'
+ls -mtp | sed 's/ //g'
