@@ -8,6 +8,7 @@ func PrintNbr(n int) {
 	}
 	loop(n)
 }
+
 func loop(n int) {
 	if n >= 10 || n <= -10 {
 		loop(n / 10)
