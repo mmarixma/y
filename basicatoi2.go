@@ -10,6 +10,12 @@ func BasicAtoi2(s string) int {
 		if r == ' ' {
 			return 0
 		}
+		if r < '0' && r > '9' {
+			return 0
+		}
+		if r == '.' || r == ',' || r == '?' || r == '!' || r == '-' || r == '+' {
+			return 0
+		}
 	}
 	n := 0
 	for i := 0; i < len(s); i++ {
