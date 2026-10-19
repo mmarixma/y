@@ -6,7 +6,11 @@ func IterativeFactorial(nb int) int {
 	}
 	result := 1
 	for i := 2; i <= nb; i++ {
+		previous := result
 		result *= i
+		if result/i != previous {
+			return 0
+		}
 	}
 	return result
 }
