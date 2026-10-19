@@ -10,6 +10,7 @@ func FindNextPrime(nb int) int {
 		}
 	}
 }
+
 func isPrime(nb int) bool {
 	if nb < 2 {
 		return false
