@@ -5,8 +5,8 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 	list := make([]int, max-min)
-	for i := 0; i < len(list); i++ {
-		list[i] = min + i
+	for i := min; i < max; i++ {
+		list[i-min] = i
 	}
 	return list
 }
