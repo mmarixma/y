@@ -15,3 +15,12 @@ func PrintWordsTables(a []string) {
 	}
 	z01.PrintRune('\n')
 }
+
+// func PrintWordsTables(a []string) {
+// 	for _, word := range a {
+// 		for _, r := range word {
+// 			z01.PrintRune(r)
+// 		}
+// 		z01.PrintRune('\n')
+// 	}
+// }
