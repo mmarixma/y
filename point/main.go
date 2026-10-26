@@ -19,7 +19,7 @@ func main() {
 	setPoint(points)
 	arr := [15]rune{
 		'x', ' ', '=', ' ',
-		'0' + points.x/10, '0' + points.x%10,',',' ',
+		'0' + points.x/10, '0' + points.x%10, ',', ' ',
 		'y', ' ', '=', ' ',
 		'0' + points.y/10, '0' + points.y%10, '\n',
 	}
