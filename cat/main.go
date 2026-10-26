@@ -1,8 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
 	for _, name := range arrgs {
 		file, err := os.Open(name)
 		if err != nil {
-			fmt.Println("ERROR:", err)
+			printStr("ERROR: "+err.Error()+"\n")
 			failed = true
 			continue
 		}
@@ -35,10 +36,18 @@ func printContent(file *os.File) {
 	for {
 		n, err := file.Read(arr)
 		if n > 0 {
-			fmt.Print(string(arr[:n]))
+			for _, b := range arr[:n] {
+				z01.PrintRune(rune(b))
+			}
 		}
 		if err != nil {
 			break
 		}
 	}
+}
+
+func printStr(s string) {
+    for _, r := range s {
+        z01.PrintRune(r)
+    }
 }
