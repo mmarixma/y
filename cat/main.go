@@ -18,7 +18,7 @@ func main() {
 	for _, name := range arrgs {
 		file, err := os.Open(name)
 		if err != nil {
-			printStr("ERROR: "+err.Error()+"\n")
+			printStr("ERROR: " + err.Error() + "\n")
 			failed = true
 			continue
 		}
@@ -47,7 +47,7 @@ func printContent(file *os.File) {
 }
 
 func printStr(s string) {
-    for _, r := range s {
-        z01.PrintRune(r)
-    }
+	for _, r := range s {
+		z01.PrintRune(r)
+	}
 }
