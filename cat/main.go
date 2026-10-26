@@ -28,6 +28,7 @@ func main() {
 		os.Exit(1)
 	}
 }
+
 func printContent(file *os.File) {
 	arr := make([]byte, 100)
 
