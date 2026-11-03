@@ -11,22 +11,22 @@ type List struct {
 }
 
 func ListSize(l *List) int {
-  count := 0
-  t := l.Head
-  for t != nil {
-    count++
-    t = t.Next
-  }
-  return count
+	count := 0
+	t := l.Head
+	for t != nil {
+		count++
+		t = t.Next
+	}
+	return count
 }
 
-func ListPushFront(l *List, data interface{}) {
-	n := &NodeL{Data: data}
-	if l.Head == nil {
-		l.Head = n
-		l.Tail = n
-		return
-	}
-	n.Next = l.Head
-	l.Head = n
-}
+// func ListPushFront(l *List, data interface{}) {
+// 	n := &NodeL{Data: data}
+// 	if l.Head == nil {
+// 		l.Head = n
+// 		l.Tail = n
+// 		return
+// 	}
+// 	n.Next = l.Head
+// 	l.Head = n
+// }
