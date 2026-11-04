@@ -6,12 +6,12 @@ func BTreeMin(root *TreeNode) *TreeNode {
 	}
 	minNode := root
 	if leftMin := BTreeMin(root.Left); leftMin != nil {
-		if leftMin.Data > minNode.Data {
+		if leftMin.Data < minNode.Data {
 			minNode = leftMin
 		}
 	}
 	if rightMin := BTreeMin(root.Left); rightMin != nil {
-		if rightMin.Data > minNode.Data {
+		if rightMin.Data < minNode.Data {
 			minNode = rightMin
 		}
 	}
