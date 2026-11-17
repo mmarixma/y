@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"piscine"
 )
 
@@ -41,10 +42,35 @@ import (
 // 	piscine.PrintStr("Hello World!")
 // }
 
+// func main() {
+// 	a := 0
+// 	b := 1
+// 	piscine.Swap(&a, &b)
+// 	fmt.Println(a)
+// 	fmt.Println(b)
+// }
+
+// func main() {
+// 	s := "Hello World!"
+// 	s = piscine.StrRev(s)
+// 	fmt.Println(s)
+// }
+
+// func main() {
+// 	fmt.Println(piscine.BasicAtoi("12345"))
+// 	fmt.Println(piscine.BasicAtoi("0000000012345"))
+// 	fmt.Println(piscine.BasicAtoi("000000"))
+// }
+
+// func main() {
+// 	fmt.Println(piscine.BasicAtoi2("12345"))
+// 	fmt.Println(piscine.BasicAtoi2("0000000012345."))
+// 	fmt.Println(piscine.BasicAtoi2("012 345"))
+// 	fmt.Println(piscine.BasicAtoi2("Hello World!"))
+// }
+
 func main() {
-	a := 0
-	b := 1
-	piscine.Swap(&a, &b)
-	fmt.Println(a)
-	fmt.Println(b)
+	s := []int{5, 4, 3, 2, 1, 0}
+	piscine.SortIntegerTable(s)
+	fmt.Println(s)
 }
